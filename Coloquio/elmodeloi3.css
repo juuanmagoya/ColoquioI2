@@ -1,0 +1,110 @@
+body{
+    background-image: url('images/bgDorado3.jpg'); 
+            background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+            background-repeat: no-repeat; /* Evita que la imagen se repita */
+             background-position: center; /* Centra la imagen en el fondo */
+            color: white;
+            font-family: "Baskervville SC", serif;
+            font-weight: 400;
+            font-style: normal; 
+}
+.navegacion-principal{
+    display: flex;
+    justify-content: flex-end;
+    background-color:#000;
+    margin: 0;
+}
+.navegacion-principal a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: .5rem;
+    font-size: 25px;
+}
+.navegacion-principal a:hover{
+    background-color: #26052b;
+    cursor: pointer;
+}
+.logo h1{
+    color: rgb(228, 228, 15);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size:3rem;
+    margin: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.row img{
+    width: 25rem;
+}
+.container h3{
+    font-weight: bold;
+    font-size:xx-large;
+    margin: 2rem;
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 3rem;
+    margin-top: 2rem;
+}
+.info-main{
+    background-color: transparent;
+    color: white;
+    border:3px rgb(223, 196, 196) solid;
+    margin: 0;
+    box-shadow: #aa9b9b 10px 15px 10px  ;
+    border-radius: 20px;
+}
+.info-main:nth-child(4) img{
+    width: 100%;
+}
+@media (max-width: 468px) {
+    .info{
+        display: block;
+        margin: 30px 10px;
+    }
+    .info img{
+        width: 130px;
+    }
+    .info-main:nth-child(4) img{
+        width:100%;
+        height: 350px;
+    }
+    .footer img{
+        width: 50px;
+    }
+    .navegacion-principal{
+        display: block;
+    }
+}
+.contacto{
+    text-align: center;
+    margin-top: 2rem;
+}
+.contacto button{
+    text-transform: uppercase;
+    font-size: x-large;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+.contacto form{
+    align-items: center;
+    color: black;
+}
+.texto-footer{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer img{
+    width: 80px;
+}
+.footer img:hover{
+    transform: scale(1.4); transition: all 0.4s linear;
+}
